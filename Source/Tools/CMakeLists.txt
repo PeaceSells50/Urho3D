@@ -63,6 +63,7 @@ if (URHO3D_TOOLS)
     if (URHO3D_ANGELSCRIPT)
         add_subdirectory (ScriptCompiler)
     endif ()
+	add_subdirectory (IDE)
 elseif (NOT CMAKE_CROSSCOMPILING AND URHO3D_PACKAGING)
     # PackageTool target is required but we are not cross-compiling, so build it as per normal
     add_subdirectory (PackageTool)

@@ -179,7 +179,7 @@ namespace Urho3D
 		SubscribeToEvent(nodeContainer->GetChild("DeleteVarButton", true), E_RELEASED, URHO3D_HANDLER(AttributeInspector, DeleteNodeVariable));
 
 		// Resize the node editor according to the number of variables, up to a certain maximum
-		unsigned int maxAttrs = Clamp((int)nodeContainer->GetAttributeList()->GetContentElement()->GetNumChildren(), MIN_NODE_ATTRIBUTES, MAX_NODE_ATTRIBUTES);
+		unsigned int maxAttrs = Clamp((int)nodeContainer->GetAttributeList()->GetContentElement()->GetNumChildren(), (int)MIN_NODE_ATTRIBUTES, (int)MAX_NODE_ATTRIBUTES);
 		nodeContainer->GetAttributeList()->SetFixedHeight(maxAttrs * ATTR_HEIGHT + 4);
 		nodeContainer->SetFixedHeight(maxAttrs * ATTR_HEIGHT + 58);
 

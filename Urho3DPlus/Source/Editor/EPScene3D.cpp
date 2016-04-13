@@ -310,7 +310,7 @@ namespace Urho3D
 					activeView->cameraPitch_ += mouseMove.y_ * cameraBaseRotationSpeed;
 
 					if (limitRotation)
-						activeView->cameraPitch_ = Clamp(activeView->cameraPitch_, -90.0, 90.0);
+						activeView->cameraPitch_ = Clamp(activeView->cameraPitch_, -90.0f, 90.0f);
 
 					Quaternion q = Quaternion(activeView->cameraPitch_, activeView->cameraYaw_, 0);
 					cameraNode_->SetRotation(q);
