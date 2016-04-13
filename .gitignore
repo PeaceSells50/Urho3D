@@ -95,3 +95,19 @@ configure*
 *.bak
 Thumbs.db
 .directory
+
+# VisualStudio
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.lastbuildstate
+*.tlog
+*.pdb
+*.lib
+*.exp
+*.wwdb
+*.obj
+*.sdf
+*.suo
+*.opensdf
+*.pch
